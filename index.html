@@ -5,7 +5,8 @@
   
   <meta name="author" content="Ziyuan Jiang">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
+
+  <script type="text/javascript" src="js/hidebib.js"></script>
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
 	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
 </head>
@@ -68,52 +69,50 @@
             </td>
           </tr>
         </tbody></table>
-
-
-
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-
-          <tr onmouseout="nerfsuper_stop()" onmouseover="nerfsuper_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
-                <div class="two" id='nerfsuper_image'><video  width=100% height=100% muted autoplay loop>
-                <source src="images/nerf_supervision.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video></div>
-                <img src='images/nerf_supervision.jpg' width="160">
+                <img src="images/atopic.png" width="160">
               </div>
-              <script type="text/javascript">
-                function nerfsuper_start() {
-                  document.getElementById('nerfsuper_image').style.opacity = "1";
-                }
-
-                function nerfsuper_stop() {
-                  document.getElementById('nerfsuper_image').style.opacity = "0";
-                }
-                nerfsuper_stop()
-              </script>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
-							<a href="https://waymo.com/research/block-nerf/">
-                <papertitle>NeRF-Supervision: Learning Dense Object Descriptors from Neural Radiance Fields</papertitle>
+							<a href="https://www.nature.com/articles/s41598-021-04373-7">
+                <papertitle>Accurate diagnosis of atopic dermatitis by combining transcriptome and microbiota data with supervised machine learning</papertitle>
               </a>
               <br>
-              <a href="https://yenchenlin.me/">Lin Yen-Chen</a>, 
-              <a href="http://www.peteflorence.com/">Pete Florence</a>, 
-              <strong>Jonathan T. Barron</strong>,  <br>
-              <a href="https://scholar.google.com/citations?user=_BPdgV0AAAAJ&hl=en">Tsung-Yi Lin</a>, 
-              <a href="https://meche.mit.edu/people/faculty/ALBERTOR@MIT.EDU">Alberto Rodriguez</a>,
-              <a href="http://web.mit.edu/phillipi/">Phillip Isola</a>
+              <strong>Ziyuan Jiang</strong>,
+              Jiajin Li, Nahyun Kong, Jeong-Hyun Kim, Bong-Soo Kim, Min-Jung Lee,
+              Yoon Mee Park, So-Yeon Lee, Soo-Jong Hong, Jae Hoon Sul
               <br>
-              <em>ICRA</em>, 2022  
+              <em>Scientific Report</em>, 2022
               <br>
-							<a href="http://yenchenlin.me/nerf-supervision/">project page</a> / 
-							<a href="https://arxiv.org/abs/2203.01913">arXiv</a> / 
-							<a href="https://www.youtube.com/watch?v=_zN-wVwPH1s">video</a> /
-							<a href="https://github.com/yenchenlin/nerf-supervision-public">code</a> / 
-							<a href="https://colab.research.google.com/drive/13ISri5KD2XeEtsFs25hmZtKhxoDywB5y?usp=sharing">colab</a>				
+              <div id="atopic">
+                <a href="data/s41598-021-04373-7.pdf">pdf</a> /
+	            <a shape="rect" href="javascript:togglebib('atopic')" class="togglebib">bibtex</a> /
+                <a>code</a>
+                <pre xml:space="preserve">
+@article{jiang2022accurate,
+  title={Accurate diagnosis of atopic dermatitis by combining
+         transcriptome and microbiota data with supervised
+         machine learning},
+  author={Jiang, Ziyuan and Li, Jiajin and Kong, Nahyun
+          and Kim, Jeong-Hyun and Kim, Bong-Soo and
+          Lee, Min-Jung and Park, Yoon Mee and 
+          Lee, So-Yeon and Hong, Soo-Jong and Sul, Jae Hoon},
+  journal={Scientific reports},
+  volume={12},
+  number={1},
+  pages={1--13},
+  year={2022},
+  publisher={Nature Publishing Group}
+}
+                </pre>
+              </div>
+
               <p></p>
-              <p>NeRF works better than RGB-D cameras or multi-view stereo when learning object descriptors.</p>
+              <p>Developed a more accurate ML pipeline to infer the risk of getting atopic dermatits.</p>
+
+
             </td>
           </tr>
 
@@ -143,5 +142,7 @@
     </tr>
   </table>
 </body>
-
+<script xml:space="preserve" language="JavaScript">
+  hideallbibs();
+</script>
 </html>
